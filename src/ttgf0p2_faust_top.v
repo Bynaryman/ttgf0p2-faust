@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module ttgf0p2_faust_top (
+module tt_um_gf0p2_faust_top (
     input  wire [7:0] ui_in,    // Dedicated inputs (unused here)
     output wire [7:0] uo_out,   // Dedicated outputs -> R-2R ladder
     input  wire [7:0] uio_in,   // Bidirectional IOs: input path
