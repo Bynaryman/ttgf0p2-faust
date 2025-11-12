@@ -18,3 +18,4 @@ Still to figure out
 ## External hardware
 
 We may use an external PMOD R-2R dac ladder 8-bit.
+https://digilent.com/reference/pmod/pmodr2r/start
