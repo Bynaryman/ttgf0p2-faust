@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+We want to test the capabilities of exporting faust language circuits to silicon.
 
 ## How to test
 
-Explain how to use your project
+Still to figure out
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+We may use an external PMOD R-2R dac ladder 8-bit.
