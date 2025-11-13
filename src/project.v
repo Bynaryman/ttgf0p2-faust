@@ -1,7 +1,5 @@
 `default_nettype none
 
-`include "ttgf0p2_faust_top.v"
-`include "faust_core.v"
 `include "20251113-120748-faust-tanh-softclip-switchcase/artifacts/hdl/addi.v"
 `include "20251113-120748-faust-tanh-softclip-switchcase/artifacts/hdl/cond_br.v"
 `include "20251113-120748-faust-tanh-softclip-switchcase/artifacts/hdl/cond_br_dataless.v"
