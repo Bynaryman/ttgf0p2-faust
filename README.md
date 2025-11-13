@@ -31,6 +31,22 @@ The GitHub action will automatically build the ASIC files using [LibreLane](http
 - [Join the community](https://tinytapeout.com/discord)
 - [Build your design locally](https://www.tinytapeout.com/guides/local-hardening/)
 
+## Running the testbench
+
+The Cocotb regression lives in the `test/` folder. Split the setup into two phases:
+
+**Install the test environment**
+1. `cd test`
+2. `python -m venv test_venv`
+3. `source test_venv/bin/activate`
+4. `pip install -r requirements.txt`
+
+**Activate and run**
+1. (Every new shell) `cd test && source test_venv/bin/activate`
+2. `make` — or `make SIM=icarus` / `make SIM=verilator` to select a simulator.
+
+The `Makefile` automatically includes every RTL source via `src/project.v`, so no extra include paths are needed. Waveforms land in `test/tb.vcd` and you can open them with `gtkwave tb.gtkw`.
+
 ## What next?
 
 - [Submit your design to the next shuttle](https://app.tinytapeout.com/).
