@@ -6,7 +6,7 @@
 `default_nettype none
 
 module tt_um_gf0p2_faust_top (
-    input  wire [7:0] ui_in,    // Dedicated inputs (unused here)
+    input  wire [7:0] ui_in,    // [0]=source select, [7:1]=external sample MSBs
     output wire [7:0] uo_out,   // Dedicated outputs -> R-2R ladder
     input  wire [7:0] uio_in,   // Bidirectional IOs: input path
     output wire [7:0] uio_out,  // Bidirectional IOs: output path
@@ -19,25 +19,20 @@ module tt_um_gf0p2_faust_top (
   // ---------------------------------------------------------------------------
   // Internal wires
   // ---------------------------------------------------------------------------
-  wire [15:0] faust_sample;   // Full-precision sample from Faust
-  wire [7:0]  audio_out;      // Truncated 8-bit sample for DAC
+  wire [7:0] faust_sample;    // 8-bit sample stream from the Faust core
 
   // ---------------------------------------------------------------------------
   // Faust DSP core instance
   // ---------------------------------------------------------------------------
-  // The core should output one sample per clock
+  // The core outputs one sample whenever its internal pipeline produces data.
   faust_core core (
       .clk  (clk),
       .rst  (!rst_n),          // Convert active-low reset to active-high
-      .out  (faust_sample)     // 16-bit signed or unsigned output
+      .ui_in(ui_in),
+      .out  (faust_sample)
   );
 
-  // ---------------------------------------------------------------------------
-  // Output truncation / quantization
-  // TODO: check what outputs faust
-  // ---------------------------------------------------------------------------
-  assign audio_out = faust_sample[15:8];  // Simple 8-bit truncation
-  assign uo_out    = audio_out;           // Drive R-2R DAC outputs
+  assign uo_out = faust_sample;  // Drive R-2R DAC outputs
 
   // ---------------------------------------------------------------------------
   // Unused IO configuration
@@ -46,6 +41,6 @@ module tt_um_gf0p2_faust_top (
   assign uio_oe  = 8'b0;   // Configure all UIO pins as inputs
 
   // Tie off unused inputs to prevent synthesis warnings
-  wire _unused = &{ena, ui_in, uio_in, 1'b0};
+  wire _unused = &{ena, uio_in, 1'b0};
 
 endmodule
