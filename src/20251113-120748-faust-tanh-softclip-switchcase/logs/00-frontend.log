@@ -1,0 +1,16 @@
+// Soft clipping waveshaper using hyperbolic tangent implemented via a foreign function.
+gain = 3.0;
+
+tanh = ffunction(float tanhf|tanh|tanhl (float), <math.h>, "");
+
+softclip(x) = tanh(gain * x) / tanh(gain);
+
+process = softclip;
+
+Visiting signal: SigBinOp[3,SigFFun[ForeignFunction[cons[1,cons[cons[tanhf,cons[tanh,cons[tanhl,cons[tanhl,nil]]]],cons[1,nil]]],<math.h>,""],cons[SigBinOp[2,3,SigInput[0]],nil]],SigFFun[ForeignFunction[cons[1,cons[cons[tanhf,cons[tanh,cons[tanhl,cons[tanhl,nil]]]],cons[1,nil]]],<math.h>,""],cons[3,nil]]]
+Visiting signal: SigFFun[ForeignFunction[cons[1,cons[cons[tanhf,cons[tanh,cons[tanhl,cons[tanhl,nil]]]],cons[1,nil]]],<math.h>,""],cons[3,nil]]
+Visiting signal: 3
+Visiting signal: SigFFun[ForeignFunction[cons[1,cons[cons[tanhf,cons[tanh,cons[tanhl,cons[tanhl,nil]]]],cons[1,nil]]],<math.h>,""],cons[SigBinOp[2,3,SigInput[0]],nil]]
+Visiting signal: SigBinOp[2,3,SigInput[0]]
+Visiting signal: SigInput[0]
+Visiting signal: 3

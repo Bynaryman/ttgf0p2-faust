@@ -1,0 +1,678 @@
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:147:11: warning: Operation might loose information.
+    %18 = fixed_pt_arith.add %17 : <-2, -12, signed>, %11#9 : <-2, -9, signed> -> <-2, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:153:11: warning: Operation might loose information.
+    %24 = fixed_pt_arith.add %23 : <2, -12, signed>, %11#8 : <2, -9, signed> -> <2, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:159:11: warning: Operation might loose information.
+    %30 = fixed_pt_arith.add %29 : <5, -12, signed>, %11#7 : <4, -9, signed> -> <5, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:165:11: warning: Operation might loose information.
+    %36 = fixed_pt_arith.add %35 : <8, -12, signed>, %11#6 : <8, -9, signed> -> <8, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:171:11: warning: Operation might loose information.
+    %42 = fixed_pt_arith.add %41 : <11, -12, signed>, %11#5 : <11, -9, signed> -> <11, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:177:11: warning: Operation might loose information.
+    %48 = fixed_pt_arith.add %47 : <14, -12, signed>, %11#4 : <14, -9, signed> -> <14, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:183:11: warning: Operation might loose information.
+    %54 = fixed_pt_arith.add %53 : <17, -12, signed>, %11#3 : <17, -9, signed> -> <17, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:189:11: warning: Operation might loose information.
+    %60 = fixed_pt_arith.add %59 : <20, -12, signed>, %11#2 : <20, -9, signed> -> <20, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:195:11: warning: Operation might loose information.
+    %66 = fixed_pt_arith.add %65 : <24, -12, signed>, %11#1 : <24, -9, signed> -> <24, -12, signed>
+          ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/20-uniform-piecewise/20-fixed-piecewise.mlir:201:11: warning: Operation might loose information.
+    %72 = fixed_pt_arith.add %71 : <26, -12, signed>, %11#0 : <26, -9, signed> -> <26, -12, signed>
+          ^
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8
+[YieldOpConversion] Enter
+[YieldOpConversion] Parent is scf::IndexSwitchOp
+[YieldOpConversion] Yield operand types:
+   orig: !fixed_pt_arith.fixedpt<26, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<24, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<20, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<17, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<14, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<11, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<8, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<4, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+   orig: !fixed_pt_arith.fixedpt<-2, -9, signed>
+[YieldOpConversion] Target result types:
+   target: i36
+   target: i34
+   target: i30
+   target: i27
+   target: i24
+   target: i21
+   target: i18
+   target: i14
+   target: i12
+   target: i8
+   target: i8
+[YieldOpConversion] Adapted operands types:
+   adapted: i36
+   adapted: i34
+   adapted: i30
+   adapted: i27
+   adapted: i24
+   adapted: i21
+   adapted: i18
+   adapted: i14
+   adapted: i12
+   adapted: i8
+   adapted: i8
+Operand #0: orig=!fixed_pt_arith.fixedpt<26, -9, signed> adapted=i36 target=i36
+  -> types match, using adapted
+Operand #1: orig=!fixed_pt_arith.fixedpt<24, -9, signed> adapted=i34 target=i34
+  -> types match, using adapted
+Operand #2: orig=!fixed_pt_arith.fixedpt<20, -9, signed> adapted=i30 target=i30
+  -> types match, using adapted
+Operand #3: orig=!fixed_pt_arith.fixedpt<17, -9, signed> adapted=i27 target=i27
+  -> types match, using adapted
+Operand #4: orig=!fixed_pt_arith.fixedpt<14, -9, signed> adapted=i24 target=i24
+  -> types match, using adapted
+Operand #5: orig=!fixed_pt_arith.fixedpt<11, -9, signed> adapted=i21 target=i21
+  -> types match, using adapted
+Operand #6: orig=!fixed_pt_arith.fixedpt<8, -9, signed> adapted=i18 target=i18
+  -> types match, using adapted
+Operand #7: orig=!fixed_pt_arith.fixedpt<4, -9, signed> adapted=i14 target=i14
+  -> types match, using adapted
+Operand #8: orig=!fixed_pt_arith.fixedpt<2, -9, signed> adapted=i12 target=i12
+  -> types match, using adapted
+Operand #9: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+Operand #10: orig=!fixed_pt_arith.fixedpt<-2, -9, signed> adapted=i8 target=i8
+  -> types match, using adapted
+[YieldOpConversion] Rewriting yield with operands:
+   i36
+   i34
+   i30
+   i27
+   i24
+   i21
+   i18
+   i14
+   i12
+   i8
+   i8

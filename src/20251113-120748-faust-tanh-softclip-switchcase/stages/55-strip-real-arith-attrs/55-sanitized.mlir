@@ -1,0 +1,232 @@
+module {
+  func.func @process(%arg0: i8) -> i8 {
+    %c7 = arith.constant 7 : index
+    %c6 = arith.constant 6 : index
+    %c5 = arith.constant 5 : index
+    %c4 = arith.constant 4 : index
+    %c3 = arith.constant 3 : index
+    %c2 = arith.constant 2 : index
+    %c1 = arith.constant 1 : index
+    %c0 = arith.constant 0 : index
+    %c5_i39 = arith.constant 5 : i39
+    %c3_i40 = arith.constant 3 : i40
+    %c3_i38 = arith.constant 3 : i38
+    %c3_i34 = arith.constant 3 : i34
+    %c3_i31 = arith.constant 3 : i31
+    %c3_i28 = arith.constant 3 : i28
+    %c3_i25 = arith.constant 3 : i25
+    %c3_i22 = arith.constant 3 : i22
+    %c3_i19 = arith.constant 3 : i19
+    %c3_i16 = arith.constant 3 : i16
+    %c3_i12 = arith.constant 3 : i12
+    %c83_i8 = arith.constant 83 : i8
+    %c-18_i8 = arith.constant -18 : i8
+    %c-206_i12 = arith.constant -206 : i12
+    %c65_i14 = arith.constant 65 : i14
+    %c-477_i18 = arith.constant -477 : i18
+    %c12014_i21 = arith.constant 12014 : i21
+    %c-170708_i24 = arith.constant -170708 : i24
+    %c1874477_i27 = arith.constant 1874477 : i27
+    %c-15214840_i30 = arith.constant -15214840 : i30
+    %c81733304_i34 = arith.constant 81733304 : i34
+    %c30216113779_i36 = arith.constant 30216113779 : i36
+    %c14_i8 = arith.constant 14 : i8
+    %c-8_i8 = arith.constant -8 : i8
+    %c-39_i12 = arith.constant -39 : i12
+    %c27_i14 = arith.constant 27 : i14
+    %c-946_i18 = arith.constant -946 : i18
+    %c22091_i21 = arith.constant 22091 : i21
+    %c-337945_i24 = arith.constant -337945 : i24
+    %c3841501_i27 = arith.constant 3841501 : i27
+    %c-31696380_i30 = arith.constant -31696380 : i30
+    %c171648628_i34 = arith.constant 171648628 : i34
+    %c29973630845_i36 = arith.constant 29973630845 : i36
+    %c27_i8 = arith.constant 27 : i8
+    %c208_i12 = arith.constant 208 : i12
+    %c-171_i14 = arith.constant -171 : i14
+    %c-698_i18 = arith.constant -698 : i18
+    %c32999_i21 = arith.constant 32999 : i21
+    %c-617278_i24 = arith.constant -617278 : i24
+    %c7587834_i27 = arith.constant 7587834 : i27
+    %c-64863632_i30 = arith.constant -64863632 : i30
+    %c357306231_i34 = arith.constant 357306231 : i34
+    %c29466637868_i36 = arith.constant 29466637868 : i36
+    %c59_i8 = arith.constant 59 : i8
+    %c-108_i12 = arith.constant -108 : i12
+    %c-603_i14 = arith.constant -603 : i14
+    %c4014_i18 = arith.constant 4014 : i18
+    %c19631_i21 = arith.constant 19631 : i21
+    %c-923200_i24 = arith.constant -923200 : i24
+    %c13829771_i27 = arith.constant 13829771 : i27
+    %c-127859351_i30 = arith.constant -127859351 : i30
+    %c730237859_i34 = arith.constant 730237859 : i34
+    %c28420921397_i36 = arith.constant 28420921397 : i36
+    %c28_i8 = arith.constant 28 : i8
+    %c21_i8 = arith.constant 21 : i8
+    %c-81_i12 = arith.constant -81 : i12
+    %c-1237_i14 = arith.constant -1237 : i14
+    %c17378_i18 = arith.constant 17378 : i18
+    %c-97947_i21 = arith.constant -97947 : i21
+    %c-667214_i24 = arith.constant -667214 : i24
+    %c20961951_i27 = arith.constant 20961951 : i27
+    %c-233149324_i30 = arith.constant -233149324 : i30
+    %c1437684793_i34 = arith.constant 1437684793 : i34
+    %c26323307783_i36 = arith.constant 26323307783 : i36
+    %c45_i8 = arith.constant 45 : i8
+    %c2_i8 = arith.constant 2 : i8
+    %c-503_i12 = arith.constant -503 : i12
+    %c1614_i14 = arith.constant 1614 : i14
+    %c22615_i18 = arith.constant 22615 : i18
+    %c-374569_i21 = arith.constant -374569 : i21
+    %c1627380_i24 = arith.constant 1627380 : i24
+    %c19014169_i27 = arith.constant 19014169 : i27
+    %c-362196303_i30 = arith.constant -362196303 : i30
+    %c2631506039_i34 = arith.constant 2631506039 : i34
+    %c22341360500_i36 = arith.constant 22341360500 : i36
+    %c-43_i8 = arith.constant -43 : i8
+    %c-79_i8 = arith.constant -79 : i8
+    %c157_i12 = arith.constant 157 : i12
+    %c7594_i14 = arith.constant 7594 : i14
+    %c-49374_i18 = arith.constant -49374 : i18
+    %c-308104_i21 = arith.constant -308104 : i21
+    %c5772921_i24 = arith.constant 5772921 : i24
+    %c-10898984_i27 = arith.constant -10898984 : i27
+    %c-403714128_i30 = arith.constant -403714128 : i30
+    %c4223255025_i34 = arith.constant 4223255025 : i34
+    %c15516601493_i36 = arith.constant 15516601493 : i36
+    %c-78_i8 = arith.constant -78 : i8
+    %c46_i8 = arith.constant 46 : i8
+    %c1454_i12 = arith.constant 1454 : i12
+    %c-7314_i14 = arith.constant -7314 : i14
+    %c-78970_i18 = arith.constant -78970 : i18
+    %c682179_i21 = arith.constant 682179 : i21
+    %c4256867_i24 = arith.constant 4256867 : i24
+    %c-57922167_i27 = arith.constant -57922167 : i27
+    %c-191490613_i30 = arith.constant -191490613 : i30
+    %c5510525043_i34 = arith.constant 5510525043 : i34
+    %c5640589127_i36 = arith.constant 5640589127 : i36
+    %c5_i8 = arith.constant 5 : i8
+    %0 = arith.shrui %arg0, %c5_i8 : i8
+    %1 = arith.trunci %0 : i8 to i3
+    %2 = arith.index_cast %1 : i3 to index
+    %3 = arith.cmpi eq, %2, %c0 : index
+    cf.cond_br %3, ^bb8(%c5640589127_i36, %c5510525043_i34, %c-191490613_i30, %c-57922167_i27, %c4256867_i24, %c682179_i21, %c-78970_i18, %c-7314_i14, %c1454_i12, %c46_i8, %c-78_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb1
+  ^bb1:  // pred: ^bb0
+    %4 = arith.cmpi eq, %2, %c1 : index
+    cf.cond_br %4, ^bb8(%c15516601493_i36, %c4223255025_i34, %c-403714128_i30, %c-10898984_i27, %c5772921_i24, %c-308104_i21, %c-49374_i18, %c7594_i14, %c157_i12, %c-79_i8, %c-43_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb2
+  ^bb2:  // pred: ^bb1
+    %5 = arith.cmpi eq, %2, %c2 : index
+    cf.cond_br %5, ^bb8(%c22341360500_i36, %c2631506039_i34, %c-362196303_i30, %c19014169_i27, %c1627380_i24, %c-374569_i21, %c22615_i18, %c1614_i14, %c-503_i12, %c2_i8, %c45_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb3
+  ^bb3:  // pred: ^bb2
+    %6 = arith.cmpi eq, %2, %c3 : index
+    cf.cond_br %6, ^bb8(%c26323307783_i36, %c1437684793_i34, %c-233149324_i30, %c20961951_i27, %c-667214_i24, %c-97947_i21, %c17378_i18, %c-1237_i14, %c-81_i12, %c21_i8, %c28_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb4
+  ^bb4:  // pred: ^bb3
+    %7 = arith.cmpi eq, %2, %c4 : index
+    cf.cond_br %7, ^bb8(%c28420921397_i36, %c730237859_i34, %c-127859351_i30, %c13829771_i27, %c-923200_i24, %c19631_i21, %c4014_i18, %c-603_i14, %c-108_i12, %c2_i8, %c59_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb5
+  ^bb5:  // pred: ^bb4
+    %8 = arith.cmpi eq, %2, %c5 : index
+    cf.cond_br %8, ^bb8(%c29466637868_i36, %c357306231_i34, %c-64863632_i30, %c7587834_i27, %c-617278_i24, %c32999_i21, %c-698_i18, %c-171_i14, %c208_i12, %c27_i8, %c-78_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb6
+  ^bb6:  // pred: ^bb5
+    %9 = arith.cmpi eq, %2, %c6 : index
+    cf.cond_br %9, ^bb8(%c29973630845_i36, %c171648628_i34, %c-31696380_i30, %c3841501_i27, %c-337945_i24, %c22091_i21, %c-946_i18, %c27_i14, %c-39_i12, %c-8_i8, %c14_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb7
+  ^bb7:  // pred: ^bb6
+    %10 = arith.cmpi eq, %2, %c7 : index
+    cf.cond_br %10, ^bb8(%c30216113779_i36, %c81733304_i34, %c-15214840_i30, %c1874477_i27, %c-170708_i24, %c12014_i21, %c-477_i18, %c65_i14, %c-206_i12, %c-18_i8, %c83_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8), ^bb8(%c5640589127_i36, %c5510525043_i34, %c-191490613_i30, %c-57922167_i27, %c4256867_i24, %c682179_i21, %c-78970_i18, %c-7314_i14, %c1454_i12, %c46_i8, %c-78_i8 : i36, i34, i30, i27, i24, i21, i18, i14, i12, i8, i8)
+  ^bb8(%11: i36, %12: i34, %13: i30, %14: i27, %15: i24, %16: i21, %17: i18, %18: i14, %19: i12, %20: i8, %21: i8):  // 9 preds: ^bb0, ^bb1, ^bb2, ^bb3, ^bb4, ^bb5, ^bb6, ^bb7, ^bb7
+    %22 = arith.trunci %arg0 : i8 to i5
+    %23 = arith.extsi %21 : i8 to i15
+    %24 = arith.extsi %22 : i5 to i15
+    %25 = arith.muli %23, %24 : i15
+    %26 = arith.trunci %25 : i15 to i11
+    %27 = arith.extsi %26 : i11 to i12
+    %28 = arith.extsi %20 : i8 to i12
+    %29 = arith.shli %28, %c3_i12 : i12
+    %30 = arith.addi %27, %29 : i12
+    %31 = arith.trunci %30 : i12 to i11
+    %32 = arith.extsi %31 : i11 to i21
+    %33 = arith.extsi %22 : i5 to i21
+    %34 = arith.muli %32, %33 : i21
+    %35 = arith.trunci %34 : i21 to i15
+    %36 = arith.extsi %35 : i15 to i16
+    %37 = arith.extsi %19 : i12 to i16
+    %38 = arith.shli %37, %c3_i16 : i16
+    %39 = arith.addi %36, %38 : i16
+    %40 = arith.trunci %39 : i16 to i15
+    %41 = arith.extsi %40 : i15 to i25
+    %42 = arith.extsi %22 : i5 to i25
+    %43 = arith.muli %41, %42 : i25
+    %44 = arith.trunci %43 : i25 to i18
+    %45 = arith.extsi %44 : i18 to i19
+    %46 = arith.extsi %18 : i14 to i19
+    %47 = arith.shli %46, %c3_i19 : i19
+    %48 = arith.addi %45, %47 : i19
+    %49 = arith.trunci %48 : i19 to i18
+    %50 = arith.extsi %49 : i18 to i28
+    %51 = arith.extsi %22 : i5 to i28
+    %52 = arith.muli %50, %51 : i28
+    %53 = arith.trunci %52 : i28 to i21
+    %54 = arith.extsi %53 : i21 to i22
+    %55 = arith.extsi %17 : i18 to i22
+    %56 = arith.shli %55, %c3_i22 : i22
+    %57 = arith.addi %54, %56 : i22
+    %58 = arith.trunci %57 : i22 to i21
+    %59 = arith.extsi %58 : i21 to i31
+    %60 = arith.extsi %22 : i5 to i31
+    %61 = arith.muli %59, %60 : i31
+    %62 = arith.trunci %61 : i31 to i24
+    %63 = arith.extsi %62 : i24 to i25
+    %64 = arith.extsi %16 : i21 to i25
+    %65 = arith.shli %64, %c3_i25 : i25
+    %66 = arith.addi %63, %65 : i25
+    %67 = arith.trunci %66 : i25 to i24
+    %68 = arith.extsi %67 : i24 to i34
+    %69 = arith.extsi %22 : i5 to i34
+    %70 = arith.muli %68, %69 : i34
+    %71 = arith.trunci %70 : i34 to i27
+    %72 = arith.extsi %71 : i27 to i28
+    %73 = arith.extsi %15 : i24 to i28
+    %74 = arith.shli %73, %c3_i28 : i28
+    %75 = arith.addi %72, %74 : i28
+    %76 = arith.trunci %75 : i28 to i27
+    %77 = arith.extsi %76 : i27 to i37
+    %78 = arith.extsi %22 : i5 to i37
+    %79 = arith.muli %77, %78 : i37
+    %80 = arith.trunci %79 : i37 to i30
+    %81 = arith.extsi %80 : i30 to i31
+    %82 = arith.extsi %14 : i27 to i31
+    %83 = arith.shli %82, %c3_i31 : i31
+    %84 = arith.addi %81, %83 : i31
+    %85 = arith.trunci %84 : i31 to i30
+    %86 = arith.extsi %85 : i30 to i40
+    %87 = arith.extsi %22 : i5 to i40
+    %88 = arith.muli %86, %87 : i40
+    %89 = arith.trunci %88 : i40 to i33
+    %90 = arith.extsi %89 : i33 to i34
+    %91 = arith.extsi %13 : i30 to i34
+    %92 = arith.shli %91, %c3_i34 : i34
+    %93 = arith.addi %90, %92 : i34
+    %94 = arith.trunci %93 : i34 to i33
+    %95 = arith.extsi %94 : i33 to i43
+    %96 = arith.extsi %22 : i5 to i43
+    %97 = arith.muli %95, %96 : i43
+    %98 = arith.trunci %97 : i43 to i37
+    %99 = arith.extsi %98 : i37 to i38
+    %100 = arith.extsi %12 : i34 to i38
+    %101 = arith.shli %100, %c3_i38 : i38
+    %102 = arith.addi %99, %101 : i38
+    %103 = arith.trunci %102 : i38 to i37
+    %104 = arith.extsi %103 : i37 to i47
+    %105 = arith.extsi %22 : i5 to i47
+    %106 = arith.muli %104, %105 : i47
+    %107 = arith.trunci %106 : i47 to i39
+    %108 = arith.extsi %107 : i39 to i40
+    %109 = arith.extsi %11 : i36 to i40
+    %110 = arith.shli %109, %c3_i40 : i40
+    %111 = arith.addi %108, %110 : i40
+    %112 = arith.trunci %111 : i40 to i39
+    %113 = arith.shrsi %112, %c5_i39 : i39
+    %114 = arith.trunci %113 : i39 to i8
+    return %114 : i8
+  }
+}
+

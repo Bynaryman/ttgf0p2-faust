@@ -1,0 +1,241 @@
+%7 = r_arith.mul(%5 : !r_arith.r_expr, %6 : !r_arith.r_const)
+%5 = r_arith.div(%4 : !r_arith.r_expr, %1 : !r_arith.r_const)
+%4 = r_arith.tanh(%3 : !r_arith.r_expr)
+%3 = r_arith.mul(%2 : !r_arith.r_const, %arg0 : !fixed_pt_arith.fixedpt<0, -7, signed>)
+%2 = r_arith.constant(3.000000e+00 : f32)
+%1 = r_arith.constant(0.14112000805986721 : f64)
+%6 = r_arith.constant(8388607 : i64)
+<block argument> of type '!fixed_pt_arith.fixedpt<0, -7, signed>' at index: 0
+<block argument> of type '!fixed_pt_arith.fixedpt<0, -7, signed>' at index: 0
+Warning: Rounding occurred when converting the constant "0.141120" to floating-point with 165 bits.
+If safe computation is needed, try to increase the precision.
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+Warning: at least one of the given expressions is not a constant but requires evaluation.
+Evaluation is guaranteed to ensure the inclusion property. The approximate result is at least 165 bit accurate.
+[1;33mWarning: [0m[0;34mFixFunctions.cpp[0m:[1;37m129[0m ([1;37minitialize()[0m): Unspecified wIn, the minimal output width is evaluated by Sollya and may be overestimated. 
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m: Parameters of the approximation polynomials: 
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Degree=10  alpha=3    maxApproxErrorBound=0.00167186    common coeff LSB=-9
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 0:  signedMSB = 26, constant sign +   => stored size = 35 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 1:  signedMSB = 24, constant sign +   => stored size = 33 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 2:  signedMSB = 20, constant sign -   => stored size = 29 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 3:  signedMSB = 17,  variable sign    => stored size = 27 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 4:  signedMSB = 14,  variable sign    => stored size = 24 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 5:  signedMSB = 11,  variable sign    => stored size = 21 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 6:  signedMSB =  8,  variable sign    => stored size = 18 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 7:  signedMSB =  4,  variable sign    => stored size = 14 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 8:  signedMSB =  2,  variable sign    => stored size = 12 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff 9:  signedMSB = -2,  variable sign    => stored size =  8 bits
+[1;37mInfo: [0m[0;34mUniformPiecewisePolyApprox.cpp[0m:   Coeff10:  signedMSB = -2,  variable sign    => stored size =  8 bits
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m: Architecture parameters:
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 9: YLSB= -7   SSgn= 0 SMSB= -2 SLSB=-12	 Mult size 8x11
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 8: YLSB= -7   SSgn= 0 SMSB=  2 SLSB=-12	 Mult size 8x11
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 7: YLSB= -7   SSgn= 0 SMSB=  5 SLSB=-12	 Mult size 8x15
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 6: YLSB= -7   SSgn= 0 SMSB=  8 SLSB=-12	 Mult size 8x18
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 5: YLSB= -7   SSgn= 0 SMSB= 11 SLSB=-12	 Mult size 8x21
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 4: YLSB= -7   SSgn= 0 SMSB= 14 SLSB=-12	 Mult size 8x24
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 3: YLSB= -7   SSgn= 0 SMSB= 17 SLSB=-12	 Mult size 8x27
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 2: YLSB= -7   SSgn=-1 SMSB= 20 SLSB=-12	 Mult size 8x30
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 1: YLSB= -7   SSgn= 1 SMSB= 24 SLSB=-12	 Mult size 8x33
+[1;37mInfo: [0m[0;34mFixHorner.cpp[0m:   Horner step 0: YLSB= -7   SSgn= 1 SMSB= 26 SLSB=-12	 Mult size 8x37
+Polynomial 0:
+  Degree 0: value = 5640589127, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 5510525043, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -191490613, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = -57922167, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = 4256867, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = 682179, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = -78970, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = -7314, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = 1454, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = 46, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = -78, MSB = -2, LSB = -9, width = 8, signed = true
+Polynomial 1:
+  Degree 0: value = 15516601493, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 4223255025, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -403714128, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = -10898984, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = 5772921, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = -308104, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = -49374, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = 7594, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = 157, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = -79, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = -43, MSB = -2, LSB = -9, width = 8, signed = true
+Polynomial 2:
+  Degree 0: value = 22341360500, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 2631506039, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -362196303, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = 19014169, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = 1627380, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = -374569, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = 22615, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = 1614, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = -503, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = 2, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = 45, MSB = -2, LSB = -9, width = 8, signed = true
+Polynomial 3:
+  Degree 0: value = 26323307783, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 1437684793, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -233149324, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = 20961951, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = -667214, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = -97947, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = 17378, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = -1237, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = -81, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = 21, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = 28, MSB = -2, LSB = -9, width = 8, signed = true
+Polynomial 4:
+  Degree 0: value = 28420921397, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 730237859, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -127859351, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = 13829771, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = -923200, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = 19631, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = 4014, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = -603, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = -108, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = 2, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = 59, MSB = -2, LSB = -9, width = 8, signed = true
+Polynomial 5:
+  Degree 0: value = 29466637868, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 357306231, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -64863632, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = 7587834, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = -617278, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = 32999, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = -698, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = -171, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = 208, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = 27, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = -78, MSB = -2, LSB = -9, width = 8, signed = true
+Polynomial 6:
+  Degree 0: value = 29973630845, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 171648628, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -31696380, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = 3841501, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = -337945, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = 22091, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = -946, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = 27, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = -39, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = -8, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = 14, MSB = -2, LSB = -9, width = 8, signed = true
+Polynomial 7:
+  Degree 0: value = 30216113779, MSB = 26, LSB = -9, width = 36, signed = true
+  Degree 1: value = 81733304, MSB = 24, LSB = -9, width = 34, signed = true
+  Degree 2: value = -15214840, MSB = 20, LSB = -9, width = 30, signed = true
+  Degree 3: value = 1874477, MSB = 17, LSB = -9, width = 27, signed = true
+  Degree 4: value = -170708, MSB = 14, LSB = -9, width = 24, signed = true
+  Degree 5: value = 12014, MSB = 11, LSB = -9, width = 21, signed = true
+  Degree 6: value = -477, MSB = 8, LSB = -9, width = 18, signed = true
+  Degree 7: value = 65, MSB = 4, LSB = -9, width = 14, signed = true
+  Degree 8: value = -206, MSB = 2, LSB = -9, width = 12, signed = true
+  Degree 9: value = -18, MSB = -2, LSB = -9, width = 8, signed = true
+  Degree 10: value = 83, MSB = -2, LSB = -9, width = 8, signed = true
+Final expression: ((((((((((-0.15234375 * ((x-((0+0.5)/(8))) * 16) + 0.08984375) * ((x-((0+0.5)/(8))) * 16) + 2.83984375) * ((x-((0+0.5)/(8))) * 16) + -14.28515625) * ((x-((0+0.5)/(8))) * 16) + -154.23828125) * ((x-((0+0.5)/(8))) * 16) + 1332.380859375) * ((x-((0+0.5)/(8))) * 16) + 8314.193359375) * ((x-((0+0.5)/(8))) * 16) + -113129.232421875) * ((x-((0+0.5)/(8))) * 16) + -374005.103515625) * ((x-((0+0.5)/(8))) * 16) + 10762744.224609375) * ((x-((0+0.5)/(8))) * 16) + 11016775.638671875)
+Final expression: ((((((((((-0.083984375 * ((x-((1+0.5)/(8))) * 16) + -0.154296875) * ((x-((1+0.5)/(8))) * 16) + 0.306640625) * ((x-((1+0.5)/(8))) * 16) + 14.83203125) * ((x-((1+0.5)/(8))) * 16) + -96.43359375) * ((x-((1+0.5)/(8))) * 16) + -601.765625) * ((x-((1+0.5)/(8))) * 16) + 11275.236328125) * ((x-((1+0.5)/(8))) * 16) + -21287.078125) * ((x-((1+0.5)/(8))) * 16) + -788504.15625) * ((x-((1+0.5)/(8))) * 16) + 8248544.970703125) * ((x-((1+0.5)/(8))) * 16) + 30305862.291015625)
+Final expression: ((((((((((0.087890625 * ((x-((2+0.5)/(8))) * 16) + 0.00390625) * ((x-((2+0.5)/(8))) * 16) + -0.982421875) * ((x-((2+0.5)/(8))) * 16) + 3.15234375) * ((x-((2+0.5)/(8))) * 16) + 44.169921875) * ((x-((2+0.5)/(8))) * 16) + -731.580078125) * ((x-((2+0.5)/(8))) * 16) + 3178.4765625) * ((x-((2+0.5)/(8))) * 16) + 37137.048828125) * ((x-((2+0.5)/(8))) * 16) + -707414.654296875) * ((x-((2+0.5)/(8))) * 16) + 5139660.232421875) * ((x-((2+0.5)/(8))) * 16) + 43635469.7265625)
+Final expression: ((((((((((0.0546875 * ((x-((3+0.5)/(8))) * 16) + 0.041015625) * ((x-((3+0.5)/(8))) * 16) + -0.158203125) * ((x-((3+0.5)/(8))) * 16) + -2.416015625) * ((x-((3+0.5)/(8))) * 16) + 33.94140625) * ((x-((3+0.5)/(8))) * 16) + -191.302734375) * ((x-((3+0.5)/(8))) * 16) + -1303.15234375) * ((x-((3+0.5)/(8))) * 16) + 40941.310546875) * ((x-((3+0.5)/(8))) * 16) + -455369.7734375) * ((x-((3+0.5)/(8))) * 16) + 2807978.111328125) * ((x-((3+0.5)/(8))) * 16) + 51412710.513671875)
+Final expression: ((((((((((0.115234375 * ((x-((4+0.5)/(8))) * 16) + 0.00390625) * ((x-((4+0.5)/(8))) * 16) + -0.2109375) * ((x-((4+0.5)/(8))) * 16) + -1.177734375) * ((x-((4+0.5)/(8))) * 16) + 7.83984375) * ((x-((4+0.5)/(8))) * 16) + 38.341796875) * ((x-((4+0.5)/(8))) * 16) + -1803.125) * ((x-((4+0.5)/(8))) * 16) + 27011.271484375) * ((x-((4+0.5)/(8))) * 16) + -249725.294921875) * ((x-((4+0.5)/(8))) * 16) + 1426245.818359375) * ((x-((4+0.5)/(8))) * 16) + 55509612.103515625)
+Final expression: ((((((((((-0.15234375 * ((x-((5+0.5)/(8))) * 16) + 0.052734375) * ((x-((5+0.5)/(8))) * 16) + 0.40625) * ((x-((5+0.5)/(8))) * 16) + -0.333984375) * ((x-((5+0.5)/(8))) * 16) + -1.36328125) * ((x-((5+0.5)/(8))) * 16) + 64.451171875) * ((x-((5+0.5)/(8))) * 16) + -1205.62109375) * ((x-((5+0.5)/(8))) * 16) + 14819.98828125) * ((x-((5+0.5)/(8))) * 16) + -126686.78125) * ((x-((5+0.5)/(8))) * 16) + 697863.732421875) * ((x-((5+0.5)/(8))) * 16) + 57552027.0859375)
+Final expression: ((((((((((0.02734375 * ((x-((6+0.5)/(8))) * 16) + -0.015625) * ((x-((6+0.5)/(8))) * 16) + -0.076171875) * ((x-((6+0.5)/(8))) * 16) + 0.052734375) * ((x-((6+0.5)/(8))) * 16) + -1.84765625) * ((x-((6+0.5)/(8))) * 16) + 43.146484375) * ((x-((6+0.5)/(8))) * 16) + -660.048828125) * ((x-((6+0.5)/(8))) * 16) + 7502.931640625) * ((x-((6+0.5)/(8))) * 16) + -61906.9921875) * ((x-((6+0.5)/(8))) * 16) + 335251.2265625) * ((x-((6+0.5)/(8))) * 16) + 58542247.744140625)
+Final expression: ((((((((((0.162109375 * ((x-((7+0.5)/(8))) * 16) + -0.03515625) * ((x-((7+0.5)/(8))) * 16) + -0.40234375) * ((x-((7+0.5)/(8))) * 16) + 0.126953125) * ((x-((7+0.5)/(8))) * 16) + -0.931640625) * ((x-((7+0.5)/(8))) * 16) + 23.46484375) * ((x-((7+0.5)/(8))) * 16) + -333.4140625) * ((x-((7+0.5)/(8))) * 16) + 3661.087890625) * ((x-((7+0.5)/(8))) * 16) + -29716.484375) * ((x-((7+0.5)/(8))) * 16) + 159635.359375) * ((x-((7+0.5)/(8))) * 16) + 59015847.224609375)
+Final expression: ((((((((((-0.15234375 * ((x-((0+0.5)/(8))) * 16) + 0.08984375) * ((x-((0+0.5)/(8))) * 16) + 2.83984375) * ((x-((0+0.5)/(8))) * 16) + -14.28515625) * ((x-((0+0.5)/(8))) * 16) + -154.23828125) * ((x-((0+0.5)/(8))) * 16) + 1332.380859375) * ((x-((0+0.5)/(8))) * 16) + 8314.193359375) * ((x-((0+0.5)/(8))) * 16) + -113129.232421875) * ((x-((0+0.5)/(8))) * 16) + -374005.103515625) * ((x-((0+0.5)/(8))) * 16) + 10762744.224609375) * ((x-((0+0.5)/(8))) * 16) + 11016775.638671875)
+Final expression: ((((((((((-0.083984375 * ((x-((1+0.5)/(8))) * 16) + -0.154296875) * ((x-((1+0.5)/(8))) * 16) + 0.306640625) * ((x-((1+0.5)/(8))) * 16) + 14.83203125) * ((x-((1+0.5)/(8))) * 16) + -96.43359375) * ((x-((1+0.5)/(8))) * 16) + -601.765625) * ((x-((1+0.5)/(8))) * 16) + 11275.236328125) * ((x-((1+0.5)/(8))) * 16) + -21287.078125) * ((x-((1+0.5)/(8))) * 16) + -788504.15625) * ((x-((1+0.5)/(8))) * 16) + 8248544.970703125) * ((x-((1+0.5)/(8))) * 16) + 30305862.291015625)
+Final expression: ((((((((((0.087890625 * ((x-((2+0.5)/(8))) * 16) + 0.00390625) * ((x-((2+0.5)/(8))) * 16) + -0.982421875) * ((x-((2+0.5)/(8))) * 16) + 3.15234375) * ((x-((2+0.5)/(8))) * 16) + 44.169921875) * ((x-((2+0.5)/(8))) * 16) + -731.580078125) * ((x-((2+0.5)/(8))) * 16) + 3178.4765625) * ((x-((2+0.5)/(8))) * 16) + 37137.048828125) * ((x-((2+0.5)/(8))) * 16) + -707414.654296875) * ((x-((2+0.5)/(8))) * 16) + 5139660.232421875) * ((x-((2+0.5)/(8))) * 16) + 43635469.7265625)
+Final expression: ((((((((((0.0546875 * ((x-((3+0.5)/(8))) * 16) + 0.041015625) * ((x-((3+0.5)/(8))) * 16) + -0.158203125) * ((x-((3+0.5)/(8))) * 16) + -2.416015625) * ((x-((3+0.5)/(8))) * 16) + 33.94140625) * ((x-((3+0.5)/(8))) * 16) + -191.302734375) * ((x-((3+0.5)/(8))) * 16) + -1303.15234375) * ((x-((3+0.5)/(8))) * 16) + 40941.310546875) * ((x-((3+0.5)/(8))) * 16) + -455369.7734375) * ((x-((3+0.5)/(8))) * 16) + 2807978.111328125) * ((x-((3+0.5)/(8))) * 16) + 51412710.513671875)
+Final expression: ((((((((((0.115234375 * ((x-((4+0.5)/(8))) * 16) + 0.00390625) * ((x-((4+0.5)/(8))) * 16) + -0.2109375) * ((x-((4+0.5)/(8))) * 16) + -1.177734375) * ((x-((4+0.5)/(8))) * 16) + 7.83984375) * ((x-((4+0.5)/(8))) * 16) + 38.341796875) * ((x-((4+0.5)/(8))) * 16) + -1803.125) * ((x-((4+0.5)/(8))) * 16) + 27011.271484375) * ((x-((4+0.5)/(8))) * 16) + -249725.294921875) * ((x-((4+0.5)/(8))) * 16) + 1426245.818359375) * ((x-((4+0.5)/(8))) * 16) + 55509612.103515625)
+Final expression: ((((((((((-0.15234375 * ((x-((5+0.5)/(8))) * 16) + 0.052734375) * ((x-((5+0.5)/(8))) * 16) + 0.40625) * ((x-((5+0.5)/(8))) * 16) + -0.333984375) * ((x-((5+0.5)/(8))) * 16) + -1.36328125) * ((x-((5+0.5)/(8))) * 16) + 64.451171875) * ((x-((5+0.5)/(8))) * 16) + -1205.62109375) * ((x-((5+0.5)/(8))) * 16) + 14819.98828125) * ((x-((5+0.5)/(8))) * 16) + -126686.78125) * ((x-((5+0.5)/(8))) * 16) + 697863.732421875) * ((x-((5+0.5)/(8))) * 16) + 57552027.0859375)
+Final expression: ((((((((((0.02734375 * ((x-((6+0.5)/(8))) * 16) + -0.015625) * ((x-((6+0.5)/(8))) * 16) + -0.076171875) * ((x-((6+0.5)/(8))) * 16) + 0.052734375) * ((x-((6+0.5)/(8))) * 16) + -1.84765625) * ((x-((6+0.5)/(8))) * 16) + 43.146484375) * ((x-((6+0.5)/(8))) * 16) + -660.048828125) * ((x-((6+0.5)/(8))) * 16) + 7502.931640625) * ((x-((6+0.5)/(8))) * 16) + -61906.9921875) * ((x-((6+0.5)/(8))) * 16) + 335251.2265625) * ((x-((6+0.5)/(8))) * 16) + 58542247.744140625)
+Final expression: ((((((((((0.162109375 * ((x-((7+0.5)/(8))) * 16) + -0.03515625) * ((x-((7+0.5)/(8))) * 16) + -0.40234375) * ((x-((7+0.5)/(8))) * 16) + 0.126953125) * ((x-((7+0.5)/(8))) * 16) + -0.931640625) * ((x-((7+0.5)/(8))) * 16) + 23.46484375) * ((x-((7+0.5)/(8))) * 16) + -333.4140625) * ((x-((7+0.5)/(8))) * 16) + 3661.087890625) * ((x-((7+0.5)/(8))) * 16) + -29716.484375) * ((x-((7+0.5)/(8))) * 16) + 159635.359375) * ((x-((7+0.5)/(8))) * 16) + 59015847.224609375)
+Final expression: ((((((((((-0.15234375 * ((x-((0+0.5)/(8))) * 16) + 0.08984375) * ((x-((0+0.5)/(8))) * 16) + 2.83984375) * ((x-((0+0.5)/(8))) * 16) + -14.28515625) * ((x-((0+0.5)/(8))) * 16) + -154.23828125) * ((x-((0+0.5)/(8))) * 16) + 1332.380859375) * ((x-((0+0.5)/(8))) * 16) + 8314.193359375) * ((x-((0+0.5)/(8))) * 16) + -113129.232421875) * ((x-((0+0.5)/(8))) * 16) + -374005.103515625) * ((x-((0+0.5)/(8))) * 16) + 10762744.224609375) * ((x-((0+0.5)/(8))) * 16) + 11016775.638671875)
+Final expression: ((((((((((-0.083984375 * ((x-((1+0.5)/(8))) * 16) + -0.154296875) * ((x-((1+0.5)/(8))) * 16) + 0.306640625) * ((x-((1+0.5)/(8))) * 16) + 14.83203125) * ((x-((1+0.5)/(8))) * 16) + -96.43359375) * ((x-((1+0.5)/(8))) * 16) + -601.765625) * ((x-((1+0.5)/(8))) * 16) + 11275.236328125) * ((x-((1+0.5)/(8))) * 16) + -21287.078125) * ((x-((1+0.5)/(8))) * 16) + -788504.15625) * ((x-((1+0.5)/(8))) * 16) + 8248544.970703125) * ((x-((1+0.5)/(8))) * 16) + 30305862.291015625)
+Final expression: ((((((((((0.087890625 * ((x-((2+0.5)/(8))) * 16) + 0.00390625) * ((x-((2+0.5)/(8))) * 16) + -0.982421875) * ((x-((2+0.5)/(8))) * 16) + 3.15234375) * ((x-((2+0.5)/(8))) * 16) + 44.169921875) * ((x-((2+0.5)/(8))) * 16) + -731.580078125) * ((x-((2+0.5)/(8))) * 16) + 3178.4765625) * ((x-((2+0.5)/(8))) * 16) + 37137.048828125) * ((x-((2+0.5)/(8))) * 16) + -707414.654296875) * ((x-((2+0.5)/(8))) * 16) + 5139660.232421875) * ((x-((2+0.5)/(8))) * 16) + 43635469.7265625)
+Final expression: ((((((((((0.0546875 * ((x-((3+0.5)/(8))) * 16) + 0.041015625) * ((x-((3+0.5)/(8))) * 16) + -0.158203125) * ((x-((3+0.5)/(8))) * 16) + -2.416015625) * ((x-((3+0.5)/(8))) * 16) + 33.94140625) * ((x-((3+0.5)/(8))) * 16) + -191.302734375) * ((x-((3+0.5)/(8))) * 16) + -1303.15234375) * ((x-((3+0.5)/(8))) * 16) + 40941.310546875) * ((x-((3+0.5)/(8))) * 16) + -455369.7734375) * ((x-((3+0.5)/(8))) * 16) + 2807978.111328125) * ((x-((3+0.5)/(8))) * 16) + 51412710.513671875)
+Final expression: ((((((((((0.115234375 * ((x-((4+0.5)/(8))) * 16) + 0.00390625) * ((x-((4+0.5)/(8))) * 16) + -0.2109375) * ((x-((4+0.5)/(8))) * 16) + -1.177734375) * ((x-((4+0.5)/(8))) * 16) + 7.83984375) * ((x-((4+0.5)/(8))) * 16) + 38.341796875) * ((x-((4+0.5)/(8))) * 16) + -1803.125) * ((x-((4+0.5)/(8))) * 16) + 27011.271484375) * ((x-((4+0.5)/(8))) * 16) + -249725.294921875) * ((x-((4+0.5)/(8))) * 16) + 1426245.818359375) * ((x-((4+0.5)/(8))) * 16) + 55509612.103515625)
+Final expression: ((((((((((-0.15234375 * ((x-((5+0.5)/(8))) * 16) + 0.052734375) * ((x-((5+0.5)/(8))) * 16) + 0.40625) * ((x-((5+0.5)/(8))) * 16) + -0.333984375) * ((x-((5+0.5)/(8))) * 16) + -1.36328125) * ((x-((5+0.5)/(8))) * 16) + 64.451171875) * ((x-((5+0.5)/(8))) * 16) + -1205.62109375) * ((x-((5+0.5)/(8))) * 16) + 14819.98828125) * ((x-((5+0.5)/(8))) * 16) + -126686.78125) * ((x-((5+0.5)/(8))) * 16) + 697863.732421875) * ((x-((5+0.5)/(8))) * 16) + 57552027.0859375)
+Final expression: ((((((((((0.02734375 * ((x-((6+0.5)/(8))) * 16) + -0.015625) * ((x-((6+0.5)/(8))) * 16) + -0.076171875) * ((x-((6+0.5)/(8))) * 16) + 0.052734375) * ((x-((6+0.5)/(8))) * 16) + -1.84765625) * ((x-((6+0.5)/(8))) * 16) + 43.146484375) * ((x-((6+0.5)/(8))) * 16) + -660.048828125) * ((x-((6+0.5)/(8))) * 16) + 7502.931640625) * ((x-((6+0.5)/(8))) * 16) + -61906.9921875) * ((x-((6+0.5)/(8))) * 16) + 335251.2265625) * ((x-((6+0.5)/(8))) * 16) + 58542247.744140625)
+Final expression: ((((((((((0.162109375 * ((x-((7+0.5)/(8))) * 16) + -0.03515625) * ((x-((7+0.5)/(8))) * 16) + -0.40234375) * ((x-((7+0.5)/(8))) * 16) + 0.126953125) * ((x-((7+0.5)/(8))) * 16) + -0.931640625) * ((x-((7+0.5)/(8))) * 16) + 23.46484375) * ((x-((7+0.5)/(8))) * 16) + -333.4140625) * ((x-((7+0.5)/(8))) * 16) + 3661.087890625) * ((x-((7+0.5)/(8))) * 16) + -29716.484375) * ((x-((7+0.5)/(8))) * 16) + 159635.359375) * ((x-((7+0.5)/(8))) * 16) + 59015847.224609375)
+Final expression: ((((((((((-0.15234375 * ((x-((0+0.5)/(8))) * 16) + 0.08984375) * ((x-((0+0.5)/(8))) * 16) + 2.83984375) * ((x-((0+0.5)/(8))) * 16) + -14.28515625) * ((x-((0+0.5)/(8))) * 16) + -154.23828125) * ((x-((0+0.5)/(8))) * 16) + 1332.380859375) * ((x-((0+0.5)/(8))) * 16) + 8314.193359375) * ((x-((0+0.5)/(8))) * 16) + -113129.232421875) * ((x-((0+0.5)/(8))) * 16) + -374005.103515625) * ((x-((0+0.5)/(8))) * 16) + 10762744.224609375) * ((x-((0+0.5)/(8))) * 16) + 11016775.638671875)
+Final expression: ((((((((((-0.083984375 * ((x-((1+0.5)/(8))) * 16) + -0.154296875) * ((x-((1+0.5)/(8))) * 16) + 0.306640625) * ((x-((1+0.5)/(8))) * 16) + 14.83203125) * ((x-((1+0.5)/(8))) * 16) + -96.43359375) * ((x-((1+0.5)/(8))) * 16) + -601.765625) * ((x-((1+0.5)/(8))) * 16) + 11275.236328125) * ((x-((1+0.5)/(8))) * 16) + -21287.078125) * ((x-((1+0.5)/(8))) * 16) + -788504.15625) * ((x-((1+0.5)/(8))) * 16) + 8248544.970703125) * ((x-((1+0.5)/(8))) * 16) + 30305862.291015625)
+Final expression: ((((((((((0.087890625 * ((x-((2+0.5)/(8))) * 16) + 0.00390625) * ((x-((2+0.5)/(8))) * 16) + -0.982421875) * ((x-((2+0.5)/(8))) * 16) + 3.15234375) * ((x-((2+0.5)/(8))) * 16) + 44.169921875) * ((x-((2+0.5)/(8))) * 16) + -731.580078125) * ((x-((2+0.5)/(8))) * 16) + 3178.4765625) * ((x-((2+0.5)/(8))) * 16) + 37137.048828125) * ((x-((2+0.5)/(8))) * 16) + -707414.654296875) * ((x-((2+0.5)/(8))) * 16) + 5139660.232421875) * ((x-((2+0.5)/(8))) * 16) + 43635469.7265625)
+Final expression: ((((((((((0.0546875 * ((x-((3+0.5)/(8))) * 16) + 0.041015625) * ((x-((3+0.5)/(8))) * 16) + -0.158203125) * ((x-((3+0.5)/(8))) * 16) + -2.416015625) * ((x-((3+0.5)/(8))) * 16) + 33.94140625) * ((x-((3+0.5)/(8))) * 16) + -191.302734375) * ((x-((3+0.5)/(8))) * 16) + -1303.15234375) * ((x-((3+0.5)/(8))) * 16) + 40941.310546875) * ((x-((3+0.5)/(8))) * 16) + -455369.7734375) * ((x-((3+0.5)/(8))) * 16) + 2807978.111328125) * ((x-((3+0.5)/(8))) * 16) + 51412710.513671875)
+Final expression: ((((((((((0.115234375 * ((x-((4+0.5)/(8))) * 16) + 0.00390625) * ((x-((4+0.5)/(8))) * 16) + -0.2109375) * ((x-((4+0.5)/(8))) * 16) + -1.177734375) * ((x-((4+0.5)/(8))) * 16) + 7.83984375) * ((x-((4+0.5)/(8))) * 16) + 38.341796875) * ((x-((4+0.5)/(8))) * 16) + -1803.125) * ((x-((4+0.5)/(8))) * 16) + 27011.271484375) * ((x-((4+0.5)/(8)))/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+/home/lledoux/Documents/work/repositories/emeraude-mlir/hls-driver/runs/20251113-120748-faust-tanh-softclip-switchcase/stages/10-configure/10-configured.mlir:11:10: warning: Operation might loose information.
+    %8 = r_arith.machine_repr of %7 : !r_arith.r_expr as !fixed_pt_arith.fixedpt<0, -7, signed>
+         ^
+0x56167c38bac0
+0x56167c393290
+0x56167c393820
+0x56167c38d830
+0x56167c393910
+0x56167c377040
+0x56167c393f00
+Math expression: ((tanh((3.000000 * Y)) / 0.141120) * 8388607)
+Substituted expression: ((tanh((3.000000 * (x * 1 + 0))) / 0.141120) * 8388607)
+lsbout-7
+targetAccuracy1.953125e-03
+Approx:uniform_piecewise_poly
+Trunc MSB: -3
+Trunc LSB: -7
+Horner result type: !fixed_pt_arith.fixedpt<26, -12, signed>
+ * 16) + -249725.294921875) * ((x-((4+0.5)/(8))) * 16) + 1426245.818359375) * ((x-((4+0.5)/(8))) * 16) + 55509612.103515625)
+Final expression: ((((((((((-0.15234375 * ((x-((5+0.5)/(8))) * 16) + 0.052734375) * ((x-((5+0.5)/(8))) * 16) + 0.40625) * ((x-((5+0.5)/(8))) * 16) + -0.333984375) * ((x-((5+0.5)/(8))) * 16) + -1.36328125) * ((x-((5+0.5)/(8))) * 16) + 64.451171875) * ((x-((5+0.5)/(8))) * 16) + -1205.62109375) * ((x-((5+0.5)/(8))) * 16) + 14819.98828125) * ((x-((5+0.5)/(8))) * 16) + -126686.78125) * ((x-((5+0.5)/(8))) * 16) + 697863.732421875) * ((x-((5+0.5)/(8))) * 16) + 57552027.0859375)
+Final expression: ((((((((((0.02734375 * ((x-((6+0.5)/(8))) * 16) + -0.015625) * ((x-((6+0.5)/(8))) * 16) + -0.076171875) * ((x-((6+0.5)/(8))) * 16) + 0.052734375) * ((x-((6+0.5)/(8))) * 16) + -1.84765625) * ((x-((6+0.5)/(8))) * 16) + 43.146484375) * ((x-((6+0.5)/(8))) * 16) + -660.048828125) * ((x-((6+0.5)/(8))) * 16) + 7502.931640625) * ((x-((6+0.5)/(8))) * 16) + -61906.9921875) * ((x-((6+0.5)/(8))) * 16) + 335251.2265625) * ((x-((6+0.5)/(8))) * 16) + 58542247.744140625)
+Final expression: ((((((((((0.162109375 * ((x-((7+0.5)/(8))) * 16) + -0.03515625) * ((x-((7+0.5)/(8))) * 16) + -0.40234375) * ((x-((7+0.5)/(8))) * 16) + 0.126953125) * ((x-((7+0.5)/(8))) * 16) + -0.931640625) * ((x-((7+0.5)/(8))) * 16) + 23.46484375) * ((x-((7+0.5)/(8))) * 16) + -333.4140625) * ((x-((7+0.5)/(8))) * 16) + 3661.087890625) * ((x-((7+0.5)/(8))) * 16) + -29716.484375) * ((x-((7+0.5)/(8))) * 16) + 159635.359375) * ((x-((7+0.5)/(8))) * 16) + 59015847.224609375)
