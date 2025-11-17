@@ -40,5 +40,31 @@ TOPLEVEL = tb
 # List test modules to run, separated by commas and without the .py suffix:
 COCOTB_TEST_MODULES = test
 
+COCOTB_CONFIG := $(shell command -v cocotb-config 2>/dev/null)
+
+ifeq ($(COCOTB_CONFIG),)
+
+# ---------------------------------------------------------------------------
+# Standalone Icarus flow (no cocotb installed)
+# ---------------------------------------------------------------------------
+STANDALONE_SIMV ?= simv
+STANDALONE_VCD  ?= tb.vcd
+STANDALONE_SRCS := $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES)) tb.v
+
+.PHONY: sim
+sim: $(STANDALONE_SIMV)
+	./$(STANDALONE_SIMV)
+
+$(STANDALONE_SIMV): $(STANDALONE_SRCS)
+	iverilog -g2012 -I$(SRC_DIR) -o $@ $^
+
+.PHONY: clean
+clean:
+	rm -rf sim_build $(STANDALONE_SIMV) $(STANDALONE_VCD)
+
+else
+
 # include cocotb's make rules to take care of the simulator setup
 include $(shell cocotb-config --makefiles)/Makefile.sim
+
+endif
