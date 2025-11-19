@@ -25,34 +25,34 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "NA"
-  ui[1]: "NA"
-  ui[2]: "NA"
-  ui[3]: "NA"
-  ui[4]: "NA"
-  ui[5]: "NA"
-  ui[6]: "NA"
-  ui[7]: "NA"
+  ui[0]: "src_sel (0=ramp,1=external)"
+  ui[1]: "ext_sample[0]"
+  ui[2]: "ext_sample[1]"
+  ui[3]: "ext_sample[2]"
+  ui[4]: "ext_sample[3]"
+  ui[5]: "ext_sample[4]"
+  ui[6]: "ext_sample[5]"
+  ui[7]: "ext_sample[6] (MSB)"
 
   # Outputs
-  uo[0]: "NA"
-  uo[1]: "NA"
-  uo[2]: "NA"
-  uo[3]: "NA"
-  uo[4]: "NA"
-  uo[5]: "NA"
-  uo[6]: "NA"
-  uo[7]: "NA"
+  uo[0]: "dac_out[0]"
+  uo[1]: "dac_out[1]"
+  uo[2]: "dac_out[2]"
+  uo[3]: "dac_out[3]"
+  uo[4]: "dac_out[4]"
+  uo[5]: "dac_out[5]"
+  uo[6]: "dac_out[6]"
+  uo[7]: "dac_out[7] (MSB)"
 
   # Bidirectional pins
-  uio[0]: "NA"
-  uio[1]: "NA"
-  uio[2]: "NA"
-  uio[3]: "NA"
-  uio[4]: "NA"
-  uio[5]: "NA"
-  uio[6]: "NA"
-  uio[7]: "NA"
+  uio[0]: "nc (input only)"
+  uio[1]: "nc (input only)"
+  uio[2]: "nc (input only)"
+  uio[3]: "nc (input only)"
+  uio[4]: "nc (input only)"
+  uio[5]: "nc (input only)"
+  uio[6]: "nc (input only)"
+  uio[7]: "nc (input only)"
 
 # Do not change!
 yaml_version: 6
