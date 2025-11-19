@@ -1,6 +1,6 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-# TTGF0P2 Faust Softclip Experiment
+# TTGF0P2 Faust-MLIR Silicon
 
 ## Introduction
 
